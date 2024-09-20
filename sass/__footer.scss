@@ -1,0 +1,271 @@
+.footer {
+    grid-column: 1/ -1;
+    // grid-row: 6 / 7;
+
+
+
+    background-image: url('../assets/body-background.svg');
+    font-family: var(--font-main);
+    display: grid;
+    grid-template-rows: repeat(4, 8rem);
+    justify-items: center;
+
+    color: var(--color-black);
+    padding: 7rem 0 3rem 0;
+    text-align: center;
+
+
+    @media only screen and (max-width: 1080px) {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+        margin-top: 1;
+
+    }
+
+
+    &__header {
+
+        font-size: 4rem;
+        font-weight: 100;
+        color: var(--color-black);
+        align-self: center;
+        padding: 2rem 0 5rem 0;
+
+        &-pt2 {
+            font-family: var(--font-header-main);
+            font-weight: 100;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            width: 70%;
+            text-align: center;
+            padding: 5rem 0 3rem 0;
+        }
+
+        @media only screen and (max-width: 700px) {
+            font-size: 3rem;
+            ;
+        }
+    }
+
+    &__nav__box {
+        display: flex;
+        width: 60vw;
+        justify-content: space-evenly;
+        list-style-type: none;
+        align-self: center;
+    }
+
+    &__link {
+        font-size: 1.5rem;
+        padding: 1rem;
+
+
+        &:hover {
+            transform: rotate(10deg);
+            background-color: var(--color-blue);
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.602);
+
+        }
+    }
+
+    &__link--copy {
+        padding-bottom: 1px;
+
+        &:hover {
+            border-bottom: 2px solid rgb(204, 204, 91);
+        }
+
+    }
+
+
+
+    &__copyright {
+        align-self: center;
+        font-size: 1rem;
+
+        @media only screen and (max-width: 900px) {
+            width: 40%;
+            text-align: center;
+        }
+    }
+
+    &__icons {
+        align-self: center;
+        font-size: 2rem;
+        width: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+
+        @media only screen and (max-width: 900px) {
+            width: 40%;
+        }
+    }
+
+
+}
+
+a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+
+.fab,
+.far {
+    color: var(--color-black);
+    font-size: 3rem;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+// CONTACT FORM //
+
+.contact {
+
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: 3rem;
+    padding: 7rem 5rem;
+    align-self: auto;
+    font-family: var(--font-main);
+
+    &__form {
+        display: flex;
+        margin: 0 auto;
+        flex-flow: column;
+        width: 50vw;
+        font-size: 2rem;
+
+        @media screen and (max-width: 600px) {
+            width: 65vw;
+        }
+
+        @media screen and (max-width: 700px) {
+            width: 75vw;
+        }
+
+    }
+
+    &__form {
+        @media screen and (min-width: 1450px) {
+            width: 55%;
+        }
+    }
+
+}
+
+.contact input {
+    padding: 0 2rem;
+    height: 4rem;
+    border-radius: 3px;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    margin: 1rem;
+
+    &:focus {
+        border-bottom: 3px solid rgb(172, 233, 116);
+        outline: none;
+    }
+}
+
+
+.contact textarea {
+    padding: 2rem;
+    border-radius: 3px;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    margin: 1rem;
+
+    &:focus {
+        border-bottom: 3px solid rgb(172, 233, 116);
+        outline: none;
+    }
+}
+
+
+#email {
+    &:focus:invalid {
+        border-bottom: 3px solid rgb(255, 125, 125);
+    }
+
+}
+
+
+#name {
+    &:focus:invalid {
+        border-bottom: 3px solid rgb(255, 125, 125);
+    }
+
+}
+
+
+#subject {
+    &:focus:invalid {
+        border-bottom: 3px solid rgb(255, 125, 125);
+    }
+
+}
+
+
+
+
+
+@keyframes labelUp {
+    0% {
+        transform: translateY(3rem);
+
+    }
+
+    100% {
+        transform: translateY(0);
+        z-index: 1;
+    }
+}
+
+
+// BUTTON //
+
+  
+.btn-contact {
+    justify-self: center;
+    align-self: center;
+     align-items: center;
+     grid-row: 4/5;
+     grid-column: 3/-1;
+     height: 4rem;
+     width: 12rem;
+     background-color: rgba(255, 255, 255, 0.24);
+     border: 1px solid black;
+     border-radius: 4px;
+     color: rgb(255, 255, 255);
+     font-weight: 400;
+     transition: all .5s;
+    
+     cursor: pointer;
+   
+       @media screen and (max-width: 800px){
+         margin-top: 3rem;
+       }
+   
+   
+       &:hover {
+         background-color: var(--color-blue);
+         outline: none;
+       }
+   
+       &:focus{
+         outline: none;
+       }
+     
+     }

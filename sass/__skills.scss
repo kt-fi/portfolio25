@@ -1,0 +1,35 @@
+.skills{
+    background-color: var(--color-light-gray);
+    height: min-content;
+    margin-bottom: 5px;
+    border-top: 2px solid var(--color-medium-gray);
+    margin: 0 5px 5px 0;
+    padding: 3rem 3rem 5rem 3rem;
+    font-family: var(--font-main);
+    font-size: 1.7rem;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__skill {
+        width: 150px;
+        background-color: var(--color-white);
+        padding: 0 2rem;
+
+        border-radius: 8px;
+
+        & p {
+            font-family: var(--font-main);
+            font-weight: 600;
+            text-align: center;
+            margin: 1rem 0 1rem 0;
+        }
+
+        &-image {
+            width: 100%;
+        }
+    }
+}

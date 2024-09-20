@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    height: 40rem;
+    margin: 5px;
+    border-radius: 8px;
+    font-family: var(--font-main);
+    font-size: 5rem;
+    background-image: url('../assets/body-background.svg');
+
+    & h6 {
+        font-family: var(--font-header-main);
+        letter-spacing: 1.8rem;
+        font-weight: 100;
+    }
+}

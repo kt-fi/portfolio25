@@ -1,0 +1,68 @@
+.projects {
+
+    height: min-content;
+    margin: 0 5px 5px 0;
+    padding: 3rem;
+    font-family: var(--font-main);
+    font-size: 1.7rem;
+    background-color: var(--color-light-gray) ;
+
+    &__title {
+        margin: 2rem 0 3rem 0;
+    }
+
+    &__web-pages {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__applications {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__project {
+        width: 300px;
+        border-top: 3px solid var(--color-red);
+        border-bottom: 2px solid var(--color-light-red);
+        padding: 0.5rem 1rem;
+        margin: 1rem;
+        background-color: var(--color-white);
+
+        & p {
+            padding: 2rem 0;
+        }
+
+        & a {
+            padding-bottom: 1rem;
+            text-decoration: none;
+            color: var(--color-blue);
+            font-weight: 600;
+
+            &:hover {
+                color: var(--color-red);
+            }
+        }
+
+        &-title {
+            padding: 1rem 0 1rem 0;
+        }
+
+
+    }
+
+    &__image {
+        width: 100%;
+    }
+}
+
+h3 {
+    &::first-letter {
+        font-family: var(--font-fancy);
+        font-size: 4rem;
+        color: var(--color-red);
+        text-shadow: 1px 1px 1px black;
+    }
+}

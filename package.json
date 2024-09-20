@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-2025",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --watch sass/main.scss styles.css"
+  },
+  "author": "Christopher J Hillman",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.79.1"
+  }
+}
