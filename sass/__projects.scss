@@ -13,12 +13,14 @@
 
     &__web-pages {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
     }
 
     &__applications {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
     }

@@ -9,9 +9,17 @@ header {
     font-size: 5rem;
     background-image: url('./assets/body-background.svg');
 
+    @media screen and (max-width: 530px) {
+        font-size: 3rem;
+    }
+
     & h6 {
         font-family: var(--font-header-main);
         letter-spacing: 1.8rem;
         font-weight: 100;
+
+        @media screen and (max-width: 530px) {
+            font-size: 2rem;
+        }
     }
 }
