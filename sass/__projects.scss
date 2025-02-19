@@ -1,7 +1,7 @@
 .projects {
 
     height: min-content;
-    margin: 0 5px 5px 0;
+    margin: 0 0px 0px 0;
     padding: 0rem; 
     font-family: var(--font-main);
     font-size: 1.4rem; 
@@ -28,8 +28,13 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
-    }
 
+        &--bg {
+            background-color: var(--color-medium-gray);   
+  
+        }
+    }
+ 
     &__project {
         position: relative ;
         width: 300px;
