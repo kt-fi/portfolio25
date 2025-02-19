@@ -8,13 +8,14 @@ header {
     font-family: var(--font-main);
     font-size: 5rem;
     background-image: url('./assets/body-background.svg');
-    
+
 
     @media screen and (max-width: 530px) {
         font-size: 3rem;
     }
 
     & h6 {
+        margin-top: 1rem;   
         font-family: var(--font-header-main);
         letter-spacing: 1.8rem;
         font-weight: 100;
@@ -24,4 +25,12 @@ header {
             font-size: 2rem;
         }
     }
+}
+
+.black-text-back {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin: 0 0 3px 0;
+    width: max-content;
 }
