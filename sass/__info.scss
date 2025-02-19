@@ -2,15 +2,15 @@
     display: flex;
     background-color: white;
     height: min-content;
-    margin: 5px;
+    margin: 0 5px 5px 0;  
     border-top: 1px solid var(--color-medium-gray);
     padding: 0rem 0rem 0rem 0rem;   
     font-family: var(--font-main);
     font-size: 1.4rem; 
-    
+     
 
     @media only screen and (max-width: 850px) {
-        display: block;   
+        display: block;     
      }
      
     &_text { 
@@ -18,10 +18,10 @@
         border-left: 4px solid var(--color-red); 
         
     @media only screen and (max-width: 656px) {
-        padding: 2rem 2rem 2rem; 
+        padding: 2rem 2rem 3rem 2rem;    
      }
 
-        &::first-letter { 
+        &::first-letter {
             font-family: var(--font-fancy);
             font-size: 6rem;
             color: var(--color-red); 

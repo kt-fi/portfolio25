@@ -97,7 +97,7 @@ header h6 {
   display: flex;
   background-color: white;
   height: min-content;
-  margin: 5px;
+  margin: 0 5px 5px 0;
   border-top: 1px solid var(--color-medium-gray);
   padding: 0rem 0rem 0rem 0rem;
   font-family: var(--font-main);
@@ -114,7 +114,7 @@ header h6 {
 }
 @media only screen and (max-width: 656px) {
   .info_text {
-    padding: 2rem 2rem 2rem;
+    padding: 2rem 2rem 3rem 2rem;
   }
 }
 .info_text::first-letter {
