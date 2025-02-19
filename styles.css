@@ -9,6 +9,7 @@
   --color-light-gray: #d1d1d1af;
   --color-white: #f5f5f5af;
   --color-blue: #2D4059;
+  --color-medium-blue: #557094;
   --color-yellow: #FDE9C9;
   --color-red: #EA5455;
   --color-light-red: #e68f8f;
@@ -139,11 +140,11 @@ header h6 {
 }
 
 .skills {
-  background-color: var(--color-light-gray);
+  background: linear-gradient(to bottom, rgba(77, 128, 204, 0.678), rgba(0, 0, 0, 0.932)), url("../assets/earth.jpg");
+  background-size: cover;
   height: min-content;
   margin-bottom: 5px;
   border-top: 2px solid var(--color-medium-gray);
-  margin: 0 5px 5px 0;
   padding: 3rem 3rem 5rem 3rem;
   font-family: var(--font-main);
   font-size: 1.7rem;
@@ -181,34 +182,28 @@ header h6 {
 .projects {
   height: min-content;
   margin: 0 0px 0px 0;
-  padding: 0rem;
+  padding: srem;
   font-family: var(--font-main);
   font-size: 1.4rem;
   background-color: var(--color-light-gray);
 }
 .projects__title {
   padding: 2rem 0 0 5rem;
-  margin: 2rem 0 3rem 0;
 }
 @media only screen and (max-width: 450px) {
   .projects__title {
     padding: 0 0 0 1rem;
   }
 }
-.projects__web-pages {
+.projects__section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  padding: 0 0 2rem 0;
 }
-.projects__applications {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.projects__applications--bg {
-  background-color: var(--color-medium-gray);
+.projects__section--bg {
+  background-color: var(--color-medium-blue);
 }
 .projects__project {
   position: relative;
@@ -216,7 +211,7 @@ header h6 {
   height: 400px;
   border-top: 3px solid var(--color-red);
   border-bottom: 2px solid var(--color-light-red);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
   margin: 1rem;
   background-color: var(--color-white);
 }
@@ -240,7 +235,8 @@ header h6 {
   color: var(--color-red);
 }
 .projects__project-title {
-  padding: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+  padding: 1.5rem 0 1.5rem 0;
 }
 .projects__image {
   width: 100%;
@@ -392,7 +388,7 @@ a {
   }
 }
 @media screen and (min-width: 1450px) {
-  .contact__form {
+  b .contact__form {
     width: 55%;
   }
 }
