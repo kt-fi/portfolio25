@@ -247,6 +247,11 @@ header h6 {
   height: 200px;
   border-radius: 5px;
 }
+@media only screen and (max-width: 450px) {
+  .projects__image {
+    height: 220px;
+  }
+}
 
 h3::first-letter {
   font-family: var(--font-fancy);
