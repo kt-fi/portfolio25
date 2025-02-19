@@ -184,16 +184,16 @@ header h6 {
 .projects {
   height: min-content;
   margin: 0 5px 5px 0;
-  padding: 3rem;
+  padding: 0rem;
   font-family: var(--font-main);
   font-size: 1.4rem;
   background-color: var(--color-light-gray);
 }
 .projects__title {
-  padding: 0 0 0 5rem;
+  padding: 2rem 0 0 5rem;
   margin: 2rem 0 3rem 0;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .projects__title {
     padding: 0 0 0 1rem;
   }
@@ -219,6 +219,11 @@ header h6 {
   padding: 0.5rem 1rem;
   margin: 1rem;
   background-color: var(--color-white);
+}
+@media only screen and (max-width: 450px) {
+  .projects__project {
+    width: 100vw;
+  }
 }
 .projects__project p {
   padding: 2rem 0;
