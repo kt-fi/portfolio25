@@ -193,6 +193,11 @@ header h6 {
   padding: 0 0 0 5rem;
   margin: 2rem 0 3rem 0;
 }
+@media only screen and (max-width: 400px) {
+  .projects__title {
+    padding: 0 0 0 1rem;
+  }
+}
 .projects__web-pages {
   display: flex;
   flex-wrap: wrap;
