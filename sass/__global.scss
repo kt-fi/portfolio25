@@ -5,13 +5,13 @@
     --font-first-letter: 'Italiana', serif;
     --font-main:'Spartan', sans-serif;;
     --font-fancy: 'Dancing Script', cursive;
-   //Colors
+   //Colors 
     --color-black: #343434;
     --color-medium-gray: #acacac; 
     --color-light-gray: #d1d1d1af;
     --color-white: #f5f5f5af;
-    --color-blue: #2D4059;
-    --color-medium-blue: #557094;
+    --color-blue: #2D4059; 
+    --color-medium-blue: #9bb6da;
     --color-yellow: #FDE9C9;
     --color-red: #EA5455;
     --color-light-red: #e68f8f;
@@ -21,7 +21,7 @@
 *{
     padding: 0;
     margin: 0;
-}
+} 
 
 *:focus {
     outline: none;

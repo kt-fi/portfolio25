@@ -9,7 +9,7 @@
   --color-light-gray: #d1d1d1af;
   --color-white: #f5f5f5af;
   --color-blue: #2D4059;
-  --color-medium-blue: #557094;
+  --color-medium-blue: #9bb6da;
   --color-yellow: #FDE9C9;
   --color-red: #EA5455;
   --color-light-red: #e68f8f;
@@ -51,6 +51,15 @@ body {
   max-width: 1300px;
   border-left: 1px solid var(--color-medium-gray);
   border-right: 1px solid var(--color-medium-gray);
+}
+
+.nav {
+  display: flex;
+  text-align: right;
+  width: 100vw;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 800;
 }
 
 header {
@@ -140,7 +149,7 @@ header h6 {
 }
 
 .skills {
-  background: linear-gradient(to bottom, rgba(77, 128, 204, 0.678), rgba(0, 0, 0, 0.932)), url("../assets/earth.jpg");
+  background: linear-gradient(to bottom, rgb(237, 243, 252), rgba(37, 37, 37, 0.39)), url("../assets/earth.jpg");
   background-size: cover;
   height: min-content;
   margin-bottom: 5px;
@@ -152,7 +161,6 @@ header h6 {
 .skills__container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-around;
 }
 .skills__skill {
